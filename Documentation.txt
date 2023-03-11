@@ -1,3 +1,24 @@
+Q1
+------------------------------
+The program is to read and print two polynomials from the user’s input using arrays. Also, required to implement the addition and multiplication of those two polynomials using arrays.
+First to read the user input of exponent and coefficient of the terms in polynomial 1 and store it in the array A. We leave the first index in array A to store the value of no. of terms and the other indexes to store value of exponent first followed by coefficient of respective terms in the polynomial A. Similarly, we continue for polynomial 2 in array B. We also provide a choice for user to add in the terms followed in the for loop.
+Next, we display the polynomials A and B. We use the for loop to traverse the array from index1 to the last node. 
+
+Addition:
+•	If exponential in B is greater than A, then store the exponent and coefficient of that term in B to C i.e., to the new array.
+•	If exponential in B is lesser than A, then store the exponent and coefficient of that term in A to C.
+•	If exponential of both polynomial numbers is same, then add the respective coefficients and store the updated coefficient in C.
+•	If any other terms are left in A compared to B, then we just copy those terms (exponents and coefficients) to the new array, C. And, similarly with terms left in B.
+•	Then, we print the sum of the polynomials from index1 to the end of the array. Value+2 indicates the position of the next coefficient.
+
+Multiplication:
+•	 We multiply the coefficients of each term in A with terms in B and updated the value in coefficients of C.
+•	In case of exponentials, we add the exponentials of both polynomials and store the value in exponents of new array, C.
+•	Then, we print the multiplication of the polynomials from index1 to the end of the array. Value+2 indicates the position of the next coefficient.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q2
+-------------------------------
 The program written is using LinkedList to read and print polynomials whose term are given by the user. Also, to performs functions like appending and deleting a term to any given polynomial. The functions to add or multiply any two given polynomials are implemented. The program contains functions to,
 •	reading user’s input of the terms of the polynomial – polyin()
 •	display the polynomial – polyout()
@@ -7,7 +28,8 @@ The program written is using LinkedList to read and print polynomials whose term
 •	add a new term to the existing polynomial – appendterm()
 •	delete any term in the existing polynomial – deleteterm()
 
-An essential characteristic of the polynomial is that each term in the polynomial expression consists of two parts: one is the coefficient and the other is the exponent. So, a node structure having coefficients, exponents and each node pointing to the address of the next term is created.
+An essential characteristic of the polynomial is that each term in the polynomial expression consists of two parts: one is the coefficient and the other is the exponent.
+So, a node structure having coefficients, exponents and each node pointing to the address of the next term is created.
 
 Addition Approach:
 •	If power of 1st polynomial is greater than 2nd, then store 1st as it is and move its pointer.
